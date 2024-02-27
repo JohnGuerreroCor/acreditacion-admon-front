@@ -23,7 +23,14 @@
         <h6 class="pl-2 item-principal"><i class="fas fa-home"></i> Inicio</h6>
       </a>
     </mat-nav-list>
-    <mat-accordion>
+    <mat-nav-list style="padding-bottom: 0">
+      <a class="list" mat-list-item [routerLink]="['/institucion']">
+        <h6 class="pl-2 item-principal">
+          <i class="fas fa-university"></i> Institución
+        </h6>
+      </a>
+    </mat-nav-list>
+    <!-- <mat-accordion>
       <mat-expansion-panel
         class="sidenav"
         style="width: 280px"
@@ -33,7 +40,7 @@
         <mat-expansion-panel-header class="disable_ripple specific-class">
           <mat-panel-title>
             <h6 class="text-white mt-2">
-              <i class="fa-solid fa-folder"></i> Item desplegable
+              <i class="fas fa-university"></i> Institución
             </h6>
           </mat-panel-title>
         </mat-expansion-panel-header>
@@ -73,11 +80,11 @@
           </a>
         </mat-nav-list>
       </mat-expansion-panel>
-    </mat-accordion>
+    </mat-accordion> -->
     <mat-nav-list style="padding: 0">
-      <a class="list" mat-list-item [routerLink]="['/inicio']">
+      <a class="list" mat-list-item [routerLink]="['/programas']">
         <h6 class="pl-2 item-principal">
-          <i class="fa-solid fa-check-to-slot"></i> Item uno
+          <i class="fas fa-file-alt"></i> Programas Académicos
         </h6>
       </a>
       <a class="list" mat-list-item [routerLink]="['/inicio']">
@@ -108,7 +115,7 @@
       >
         <i class="fas fa-bars"></i>
       </button>
-      <h6>Plantilla administrador</h6>
+      <h6>Sistema de Información Interno de Aseguramiento de la Calidad</h6>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
           <a
